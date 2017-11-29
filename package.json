@@ -1,0 +1,22 @@
+{
+  "name": "nodeopsazure",
+  "version": "1.0.0",
+  "description": "research and describe operational method for node.js on Azure Web Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NT-D/nodeOpsAzure.git"
+  },
+  "author": "Masayuki Ota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NT-D/nodeOpsAzure/issues"
+  },
+  "homepage": "https://github.com/NT-D/nodeOpsAzure#readme",
+  "dependencies": {
+    "restify": "^6.3.4"
+  }
+}
