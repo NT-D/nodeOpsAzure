@@ -1,5 +1,3 @@
-import { appendFile } from 'fs';
-
 const appInsights = require('applicationinsights');
 const restify = require('restify');
 
