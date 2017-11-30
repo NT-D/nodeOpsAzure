@@ -3,10 +3,8 @@ let restify = require('restify');
 
 //Setup application insights
 appInsights.setup(process.env.APPINSIGHTS_INSTRUMENTATIONKEY)
-    .setAutoCollectConsole(true,true)
+    .setAutoCollectConsole(true,true)//It enables console.log() logging
     .start();
-
-console.log("appingishts",appInsights);
 
 //Create Server
 let server = restify.createServer();
