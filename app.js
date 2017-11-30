@@ -1,12 +1,15 @@
-const appInsights = require('applicationinsights');
-const restify = require('restify');
+let appInsights = require('applicationinsights');
+let restify = require('restify');
 
 //Setup application insights
-appInsights.setup(process.env.APPINSIGHTS_INSTRUMENTATIONKEY);
-appInsights.start();
+appInsights.setup(process.env.APPINSIGHTS_INSTRUMENTATIONKEY)
+    .setAutoCollectConsole(true,true)
+    .start();
+
+console.log("appingishts",appInsights);
 
 //Create Server
-const server = restify.createServer();
+let server = restify.createServer();
 
 //Set endpoint
 server.get('/api/test',log);
