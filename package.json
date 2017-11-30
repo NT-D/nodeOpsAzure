@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/NT-D/nodeOpsAzure#readme",
   "dependencies": {
+    "applicationinsights": "^1.0.1",
     "restify": "^6.3.4"
   }
 }

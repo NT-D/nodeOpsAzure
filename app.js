@@ -1,7 +1,14 @@
-var restify = require('restify');
+import { appendFile } from 'fs';
+
+const appInsights = require('applicationinsights');
+const restify = require('restify');
+
+//Setup application insights
+appInsights.setup(process.env.APPINSIGHTS_INSTRUMENTATIONKEY);
+appInsights.start();
 
 //Create Server
-var server = restify.createServer();
+const server = restify.createServer();
 
 //Set endpoint
 server.get('/api/test',log);
